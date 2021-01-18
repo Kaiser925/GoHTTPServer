@@ -19,5 +19,5 @@ Usage of ./SimpleHTTPServer:
 Run in docker
 
 ```bash
-~ docker run tricker1996/simple-http-server -v $YOUR_DATA_DIR:/data -p $PORT:8765 
+~ docker run -v $YOUR_DATA_DIR:/data -p $PORT:8765 tricker1996/simple-http-server  
 ```
