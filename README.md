@@ -4,7 +4,7 @@ SimpleHTTPServer is a simple file server.
 
 Usage:
 
-```shell
+```bash
 ~ SimpleHTTPServer --help
 
 Usage of ./SimpleHTTPServer:
@@ -14,4 +14,10 @@ Usage of ./SimpleHTTPServer:
         root directory (default "./")
   -port int
         bind port (default 8765)
+```
+
+Run in docker
+
+```bash
+~ docker run tricker1996/simple-http-server -v $YOUR_DATA_DIR:/data -p $PORT:8765 
 ```
