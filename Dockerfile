@@ -8,7 +8,7 @@ RUN go build
 
 FROM busybox:glibc
 
-COPY --from=builder /go/src/SimpleHTTPServer /usr/bin/SimpleHTTPServer
+COPY --from=builder /go/src/fileserve /usr/bin/fileserve
 
 EXPOSE 8765
 

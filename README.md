@@ -1,13 +1,19 @@
-# SimpleHTTPServer
+# fileserve
 
-SimpleHTTPServer is a simple file server.
+fileserve is a simple file server.
 
 Usage:
 
-```bash
-~ SimpleHTTPServer --help
+install
 
-Usage of ./SimpleHTTPServer:
+```bash
+$ go install github.com/Kaiser925/fileserve@latest
+```
+
+```bash
+$ fileserve --help
+
+Usage of ./fileserve:
   -bind string
         bind address (default "127.0.0.1")
   -directory string
@@ -19,5 +25,5 @@ Usage of ./SimpleHTTPServer:
 Run in docker
 
 ```bash
-~ docker run -v $YOUR_DATA_DIR:/data -p $PORT:8765 tricker1996/simple-http-server  
+$ docker run -v $YOUR_DATA_DIR:/data -p $PORT:8765 tricker1996/simple-http-server  
 ```
